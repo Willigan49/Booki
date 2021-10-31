@@ -19,6 +19,16 @@ a {
     color: black;
 }
 
+h1 {
+    font-size: 1.3em;
+}
+
+::placeholder {
+    font-weight: 700;
+    color: black;
+    opacity: 1;
+}
+
 
 /* ----------HEADER -----------*/
 
@@ -43,9 +53,122 @@ header,
 }
 
 .menu-item a {
-    padding-top: 43px;
+    padding-top: 44px;
 }
 
 .menu-item a:hover {
-    border-top: 3px blue solid;
+    border-top: 3px #0065FC solid;
+}
+
+
+/* ---------- SECTION SEARCH ----------- */
+
+#search {
+    margin-top: 30px;
+}
+
+.submit-mobile {
+    display: none;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+label i {
+    padding: 15.5px 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+input[name="destination"] {
+    font-weight: 700;
+    padding: 12px;
+    border: 2px #F2F2F2 solid;
+    border-left: none;
+    border-right: none;
+}
+
+.submit-desktop {
+    background-color: #0065FC;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 14.3px 20px;
+    border-radius: 0 15px 15px 0;
+}
+
+.submit-desktop:hover {
+    cursor: pointer;
+}
+
+
+/* ---------- FILTERS ----------- */
+
+.filters {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.filters p {
+    font-weight: 700;
+}
+
+.filter-list {
+    display: flex;
+}
+
+.filter-list a {
+    border: 2px #F2F2F2 solid;
+    border-left: none;
+    border-radius: 25px;
+    padding: 10px 15px 10px 0px;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.filter-list i {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 12.5px 12.5px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.filter-list .money,
+.filter-list .dog {
+    padding: 12.5px 11.5px;
+}
+
+.filter-list .child {
+    padding: 12.5px 13.5px;
+}
+
+.filter-list i {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.filter-list a:hover {
+    background-color: #DEEBFF;
+}
+
+
+/* ---------- INFO ----------- */
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
 }
