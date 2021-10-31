@@ -16,6 +16,7 @@
 
 <body>
     <div id="wrapper">
+
         <header>
             <div class="logo">
                 <a href="#"><img src="assets/logo/Booki.png" alt="logo Booki"></a>
@@ -27,6 +28,35 @@
                 </ul>
             </nav>
         </header>
+
+        <section id="search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form action="#">
+                <label for="destination">
+                    <i class="fas fa-map-marker-alt"></i>
+                </label>
+                <input type="text" name="destination" id="destination" placeholder="Marseille, France">
+                <input type="submit" class="submit-desktop" value="Rechercher">
+                <button type="submit" class="submit-mobile">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <div class="filters">
+                <p>Filtres</p>
+                <ul class="filter-list">
+                    <li class="filter-item"><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
+                    <li class="filter-item"><a href="#"><i class="fas fa-child"></i>Familial</a></li>
+                    <li class="filter-item"><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
+                    <li class="filter-item"><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
+                </ul>
+            </div>
+            <div>
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+
     </div>
 </body>
 

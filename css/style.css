@@ -3,3 +3,49 @@
 * {
     box-sizing: border-box;
 }
+
+#wrapper {
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ----------HEADER -----------*/
+
+header {
+    margin-top: 30px;
+}
+
+header,
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 0 30px;
+}
+
+.logo img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.menu-item a {
+    padding-top: 43px;
+}
+
+.menu-item a:hover {
+    border-top: 3px blue solid;
+}
