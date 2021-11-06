@@ -23,6 +23,10 @@ h1 {
     font-size: 1.3em;
 }
 
+h2 {
+    font-size: 1.2em;
+}
+
 ::placeholder {
     font-weight: 700;
     color: black;
@@ -172,4 +176,26 @@ input[name="destination"] {
     padding: 5px 10px;
     border-radius: 20px;
     margin-right: 10px;
+}
+
+/* ---------- HEBERGEMENTS ----------- */
+
+#hebergements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: #F2F2F2;
+    height: 500px;
+    border-radius: 25px;
+}
+
+#hebergements .left{
+    width: 55%;
+}
+
+#hebergements .right{
+    width: 40%;
 }
