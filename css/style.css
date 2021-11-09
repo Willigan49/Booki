@@ -5,13 +5,17 @@
 }
 
 #wrapper {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
 }
 
 li {
     list-style: none;
+}
+
+p{
+    font-size: 13px;
 }
 
 a {
@@ -27,10 +31,20 @@ h2 {
     font-size: 1.2em;
 }
 
+h3{
+    font-size: 0.9em;
+    margin: 0;
+}
+
 ::placeholder {
     font-weight: 700;
     color: black;
     opacity: 1;
+}
+
+em{
+    font-weight: 600;
+    font-style: normal;
 }
 
 
@@ -123,6 +137,8 @@ input[name="destination"] {
 
 .filter-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .filter-list a {
@@ -130,7 +146,6 @@ input[name="destination"] {
     border-left: none;
     border-radius: 25px;
     padding: 10px 15px 10px 0px;
-    margin-right: 20px;
     font-weight: 700;
 }
 
@@ -192,20 +207,77 @@ input[name="destination"] {
 }
 
 #hebergements .l {
-    width: 55%;
+    width: 62%;
+}
+
+#hebergements .l > a{
+    font-weight: 700;
 }
 
 #hebergements .r {
-    width: 42%;
+    width: 35%;
 }
 
 .grey-bg {
     background-color: #F2F2F2;
-    height: 500px;
     padding: 30px;
     border-radius: 20px;
 }
 
+.card-container{
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#hebergements .card{
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 5px 20px rgb(206, 206, 206);
+}
+
+.card-img{
+    height: 100px;
+}
+
+.card-text{
+    margin-top:10px;
+    padding:0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-text p{
+    margin: 0;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.stars-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 2px;
+}
+
+.blue-star{
+    color: #0065FC;
+}
+
+.grey-star{
+   color: #F2F2F2;
+}
 
 /* ---------- ACTIVITES ----------- */
 
