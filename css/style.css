@@ -23,6 +23,10 @@ h1 {
     font-size: 1.3em;
 }
 
+h2 {
+    font-size: 1.2em;
+}
+
 ::placeholder {
     font-weight: 700;
     color: black;
@@ -172,4 +176,59 @@ input[name="destination"] {
     padding: 5px 10px;
     border-radius: 20px;
     margin-right: 10px;
+}
+
+
+/* ---------- HEBERGEMENTS ----------- */
+
+#hebergements {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergements h2 {
+    margin: 0;
+}
+
+#hebergements .l {
+    width: 55%;
+}
+
+#hebergements .r {
+    width: 42%;
+}
+
+.grey-bg {
+    background-color: #F2F2F2;
+    height: 500px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+/* ---------- ACTIVITES ----------- */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-card {
+    background-color: #F2F2F2;
+    width: 20%;
+    height: 400px;
+}
+
+.double-card {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.double-card .single-card {
+    width: 100%;
+    height: 100px;
 }
