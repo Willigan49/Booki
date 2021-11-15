@@ -11,6 +11,7 @@ body {
 #wrapper {
     max-width: 1200px;
     margin: auto;
+    width: 100%;
 }
 
 li {
@@ -56,7 +57,7 @@ em {
 
 /* ----------HEADER -----------*/
 
-header {
+.main-header {
     margin-top: 30px;
 }
 
@@ -65,15 +66,18 @@ header {
     width: 100%;
 }
 
-.main-header,
-.menu-list {
+.main-header {
     justify-content: space-between;
     align-items: center;
+}
+
+.menu-list {
+    padding: 0;
     gap: 40px;
 }
 
 .menu-list a {
-    padding-top: 44px;
+    padding: 44px 0 0 0;
 }
 
 .menu-list a:hover {
@@ -93,13 +97,13 @@ header {
 }
 
 label i {
-    padding: 15.5px 20px;
+    padding: 17px 20px;
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
 }
 
 input[name="destination"] {
-    padding: 12px;
+    padding: 14px;
     border: 2px #f2f2f2 solid;
     border-left: none;
     border-right: none;
@@ -111,21 +115,26 @@ input[name="destination"] {
     opacity: 1;
 }
 
-.submit-desktop {
+.submit {
     background-color: #0065fc;
     color: white;
     border: none;
-    padding: 14.3px 20px;
     border-radius: 0 15px 15px 0;
+    padding: 16px 20px;
+}
+
+.submit p {
+    margin: 0;
     font-weight: 600;
+    font-size: 1em;
 }
 
-.submit-desktop:hover {
-    cursor: pointer;
-}
-
-.submit-mobile {
+.submit i {
     display: none;
+}
+
+.submit:hover {
+    cursor: pointer;
 }
 
 
@@ -149,25 +158,25 @@ input[name="destination"] {
     border: 2px #f2f2f2 solid;
     border-left: none;
     border-radius: 25px;
-    padding: 10px 15px 10px 0px;
+    padding: 12px 15px 12px 0px;
     font-weight: 800;
 }
 
 .filter-list i {
     color: #0065fc;
     background-color: #deebff;
-    padding: 12.5px 12.5px;
+    padding: 14.5px 14.5px;
     border-radius: 25px;
     margin-right: 10px;
 }
 
 .filter-list .money,
 .filter-list .dog {
-    padding: 12.5px 11.5px;
+    padding: 14.5px 13.5px;
 }
 
 .filter-list .child {
-    padding: 12.5px 13.5px;
+    padding: 14.5px 15.5px;
 }
 
 .filter-list i {
@@ -330,34 +339,28 @@ input[name="destination"] {
     height: 420px;
 }
 
-.double-card,
-.single-card {
+.activite-container .double-card,
+.activite-container .single-card {
     width: 22%;
 }
 
 .double-card {
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
 }
 
 .single-card {
-    height: 100%;
     border-radius: 15px;
     box-shadow: 0px 5px 20px rgb(206, 206, 206);
+    height: 100%;
 }
 
-.single-card .card-img {
+.activite-container .single-card .card-img {
     height: 90%;
 }
 
-.double-card .single-card {
+.activite-container .double-card .single-card {
     width: 100%;
-    height: 45%;
-}
-
-.double-card .card-img {
-    height: 75%;
 }
 
 .single-card div:last-child {
@@ -366,9 +369,40 @@ input[name="destination"] {
 
 .single-card img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+}
+
+.activite-container div:nth-child(2) .single-card:first-child {
+    height: 55%;
+}
+
+.activite-container div:nth-child(2) .single-card:first-child .card-img {
+    height: 80%;
+}
+
+.activite-container div:nth-child(2) .single-card:last-child {
+    height: 35%;
+}
+
+.activite-container div:nth-child(2) .single-card:last-child .card-img {
+    height: 70%;
+}
+
+.activite-container div:nth-child(4) .single-card:first-child {
+    height: 40%;
+}
+
+.activite-container div:nth-child(4) .single-card:first-child .card-img {
+    height: 72%;
+}
+
+.activite-container div:nth-child(4) .single-card:last-child {
+    height: 50%;
+}
+
+.activite-container div:nth-child(4) .single-card:last-child .card-img {
+    height: 78%;
 }
 
 
@@ -389,4 +423,135 @@ footer ul {
 footer ul {
     padding: 0;
     gap: 5px;
+}
+
+
+/* ---------- TABLETTE ----------- */
+
+@media screen and (max-width: 992px) {}
+
+
+/* ---------- MOBILE ----------- */
+
+@media screen and (max-width: 768px) {
+    /* ---------- GENERAL ----------*/
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    /* ----------HEADER -----------*/
+    .main-header {
+        flex-direction: column;
+    }
+    nav {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .menu-list {
+        justify-content: space-evenly;
+    }
+    /* ---------- SECTION SEARCH ----------- */
+    #search {
+        padding: 0 20px;
+        margin-top: 0;
+    }
+    #search form {
+        margin-top: 40px;
+    }
+    input[name="destination"] {
+        width: 100%;
+        border-radius: 0 15px 15px 0;
+    }
+    .submit {
+        border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        right: 20px;
+        padding: 16px 16px;
+    }
+    .submit p {
+        display: none;
+    }
+    .submit i {
+        display: initial;
+    }
+    /* ---------- FILTERS ----------- */
+    .filters {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .filter-list {
+        margin-top: 0;
+    }
+    .filters ul {
+        padding: 0;
+    }
+    /* ---------- POPULAIRES ----------- */
+    #hebergements {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .populaire-container {
+        padding-top: 40px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .populaire-container .card-container {
+        gap: 10px;
+    }
+    /* ---------- HEBERGEMENTS ----------- */
+    .hebergement-container {
+        margin-top: 40px;
+        width: 100%;
+        background-color: white;
+        border-radius: 0;
+    }
+    .card-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card {
+        width: 100%;
+    }
+    /* ---------- ACTIVITES ----------- */
+    #activites {
+        padding: 0 20px;
+    }
+    .activite-container {
+        padding-top: 20px;
+        flex-direction: column;
+        height: 100%;
+    }
+    .activite-container,
+    .activite-container .double-card {
+        gap: 30px;
+    }
+    .activite-container .double-card,
+    .activite-container .single-card {
+        width: 100%;
+    }
+    .activite-container .single-card,
+    .activite-container div:nth-child(2) .single-card:first-child,
+    .activite-container div:nth-child(2) .single-card:last-child,
+    .activite-container div:nth-child(4) .single-card:first-child,
+    .activite-container div:nth-child(4) .single-card:last-child {
+        height: 200px;
+    }
+    .activite-container .single-card .card-img,
+    .activite-container div:nth-child(2) .single-card:first-child .card-img,
+    .activite-container div:nth-child(2) .single-card:last-child .card-img,
+    .activite-container div:nth-child(4) .single-card:first-child .card-img,
+    .activite-container div:nth-child(4) .single-card:last-child .card-img {
+        height: 150px;
+    }
+    /* ---------- FOOTER ----------- */
+    footer {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
 }
